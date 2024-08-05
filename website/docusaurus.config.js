@@ -266,6 +266,10 @@ module.exports = {
                 docId: 'architecture-overview',
                 docsPluginId: 'architecture',
               },
+              {
+                to: '/compatibility',
+                label: 'Compatibility',
+              },
             ],
           },
           {
