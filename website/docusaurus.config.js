@@ -102,6 +102,7 @@ module.exports = {
             require.resolve('./src/css/index.scss'),
             require.resolve('./src/css/showcase.scss'),
             require.resolve('./src/css/versions.scss'),
+            require.resolve('./src/css/compatibility.scss'),
           ],
         },
         // TODO: GA is deprecated, remove once we're sure data is streaming in GA4 via gtag.
@@ -337,6 +338,10 @@ module.exports = {
               {
                 label: 'Architecture',
                 to: 'architecture/overview',
+              },
+              {
+                to: '/compatibility',
+                label: 'Compatibility',
               },
             ],
           },

@@ -6,14 +6,52 @@
  */
 
 import React, {useEffect, useState} from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ThemedImage from '@theme/ThemedImage';
+
+const versions = require('../../versions.json');
+
+function VersionItem({item}) {
+  return (
+    <tr>
+      <td>item.version</td>
+      <td> {/* Android relate info */}
+        <div>
+          Minimum API Level: <code>13.4</code>
+        </div>
+      </td>
+      <td> {/* iOS relate info */}
+        <div>
+          Minimum API Level: <code>13.4</code>
+        </div>
+      </td>
+    </tr>
+  );
+};
 
 const CompatibilityPage = () => {
   return (
-    <h1>Hello World to Compatibility Page</h1>
+    <Layout
+      title="Compatibility"
+      description="List of version and tools that"
+      wrapperClassName="compatibility-page">
+      <h1>Compatibility</h1>
+      <p>
+        The sections below describe OS versions and toolchain supported by different versions of React Native.
+      </p>
+
+      <table className="versions">
+        <thead>
+          <tr>
+            <th>React Native Version</th>
+            <th>Android</th>
+            <th>iOS</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </Layout>
   );
 };
 
